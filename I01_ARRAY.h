@@ -94,6 +94,7 @@ VOID I01_ARRAY_Erase(jmp_buf e, I01_ARRAY *array, SIZE_T index)
 {
     if(array == NULL) I01_Error(e, L"I01_ARRAY_Erase: array should be not NULL.");
     if(!(array->flag[index / 8] >> index % 8 & 1)) I01_Error(e, L"I01_ARRAY_Erase: this index was unused.");
+    array->eraser(array->rawData + index * array->datumBytes);
     array->unuse[--array->unuseTop] = index;
     array->flag[index / 8] -= 1 << index % 8;
     return;

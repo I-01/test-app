@@ -12,7 +12,7 @@
 #include"Include.h"
 
 
-VOID I01_DoNothing(VOID)
+VOID I01_DoNothing(VOID *ptr)
 {
     return;
 }
