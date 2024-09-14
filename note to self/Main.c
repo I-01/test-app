@@ -7,9 +7,9 @@
 
 
 // インクルード.
-#include"Include.h"
-#include"I01_ARRAY.h"
-#include"I01_Func.h"
+#include"../Include.h"
+#include"../I01_ARRAY.h"
+#include"../I01_Func.h"
 
 
 // メイン関数.
@@ -17,6 +17,7 @@ INT main(VOID)
 {
     jmp_buf e;
     I01_ARRAY *array = NULL;
+    INT I01_return = 0;
     if(!setjmp(e))
     {
         array = I01_ARRAY_Constructor(e, sizeof(INT32), I01_DoNothing);

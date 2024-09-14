@@ -1,9 +1,11 @@
 {
     "terminal.integrated.defaultProfile.windows": "DevCmd VS(2022)",
+    "C_Cpp.default.compilerPath": "cl.exe",
     "files.associations": {
         "*.h": "c",
-        "exception": "c",
-        "cstdio": "c"
-    },
-    "C_Cpp.default.compilerPath": "cl.exe"
+        "*.c": "c",
+        "*.hpp": "cpp",
+        "*.cpp": "cpp",
+        "stdexcept": "cpp"
+    }
 }
