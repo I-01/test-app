@@ -6,6 +6,8 @@
         "*.c": "c",
         "*.hpp": "cpp",
         "*.cpp": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "unordered_map": "cpp",
+        "functional": "cpp"
     }
 }
